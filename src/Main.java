@@ -1,27 +1,17 @@
 public class Main {
     public static void main(String[] args) {
         int start = 100;
-        int x = 300;
-        int y = 1100;
+        int deposit = 1200;
 
-        int bonusX;
-        if (x > 1000) {
-            bonusX = x / 100;
+        int bonus;
+        if (deposit > 1000) {
+            bonus = deposit / 100;
         } else {
-            bonusX = 0;
+            bonus = 0;
         }
 
-        System.out.println("При пополнении счета на " + (x) + " рублей, итоговый счет = " + (start + x + bonusX) + " рублей." + " Бонус составил = " + bonusX + " рублей.");
+        System.out.println("При пополнении счета на " + (deposit) + " рублей, итоговый счет = " + (start + deposit + bonus) + " рублей. Бонус составил = " + bonus + " рублей.");
 
-        int bonusY;
-        if (y > 1000) {
-            bonusY = y / 100;
-        } else {
-            bonusY = 0;
-        }
-
-        System.out.println("При пополнении счета на " + (y) + " рублей, итоговый счет = " + (start + y + bonusY) + " рублей." + " Бонус составил = " + bonusY + " рублей.");
- 
 
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
